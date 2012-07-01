@@ -1,0 +1,89 @@
+@font-face{font-family:'JunctionRegular';src:url('junction_02-webfont.eot');src:local('&#9786;'),url('junction_02-webfont.woff') format('woff'),url('junction_02-webfont.ttf') format('truetype'),url('junction_02-webfont.svg#webfontJ8LG5ULI') format('svg');font-weight:bold;font-style:normal}
+#main-title{color:#c6c6c6;text-shadow:0px 0px 3px #2e2e2e;-webkit-text-shadow:}
+em{font-family:'JunctionRegular';font-style:normal}
+td{padding-left:10px;font-family:'JunctionRegular', 'Helvetica Neue', Verdana, Arial, sans-serif;background:none}
+.cap-top-trk{height:11px;top:-9px;width:21px;position:absolute;background:transparent url(../i/Track-cap-top.png) no-repeat}
+.first-slice{-webkit-border-top-left-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-bottomleft:5px;border-top-left-radius:5px;border-bottom-left-radius:5px}
+.last-slice{-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-moz-border-radius-topright:5px;-moz-border-radius-bottomright:5px;border-top-right-radius:5px;border-bottom-right-radius:5px}
+#logo{background:transparent url(../i/logo_fill.png) center center no-repeat;padding:0px;margin:0px;width:100%;height:172px;top:0px;border:none;position:absolute;left:3px}
+#jq-nec{height:0px;width:755px}
+td.betterhover,#tabletwo tbody tr:hover{  background:#f4ffed}
+.rounded{-webkit-border-radius:5px;border-radius:5px;-moz-border-radius:5px}
+body{background-color:#279b18;background-image:url(../i/gradient.png);background-repeat:repeat;background-attachment:fixed;background-position:left top;padding:0px;margin:0px;overflow:hidden;border:none}
+.table-slide{bottom:0px;width:750px;height:0px;left:0px;position:absolute !important;overflow-y:scroll;overflow-x:hidden;z-index:9992;background:white}
+thead{height:188px}
+::selection{background:#59c63d;/* Safari */color:white}
+::-moz-selection{background:#59c63d;/* Firefox */color:white}
+#x-button{background:url(../i/close.png) no-repeat;height:30px;left:700px;position:absolute;top:-140px;right:10px !important;width:30px;z-index:11000;opacity:0}
+#height-0{height: 0px;}
+#table-table{background-color:white;z-index:2000;width:733px;margin-left:auto;margin-right:auto;opacity:1.0 !important}
+.table-fade-opaque{  filter:alpha(opacity = 0)}
+#jq-nec {width: 733px;}
+#buttonbar{top:100px;position:absolute;width:100%;height:137px}
+#table-bg{position:fixed;width:100%;height:100%;opacity:0;display:none;  filter:alpha(opacity = 0);top:0px;left:0px;padding:0px;margin:0px;background:black}
+#header{background-color:transparent;background-image:url(../i/top-shadow.png);background-position:repeat-x;width:100%;height:80px;position:absolute;top:0px}
+#scr{display:block;height:45px;left:720px;position:absolute;top:135px;width:45px}
+ol,ul{list-style:none}
+#Map{width:680px;overflow:hidden;background:none;-webkit-border-radius:5px}
+#right{position:absolute;left:50%;margin-left:-210px;top:110px;padding:0px;height:36px;width:420px}
+#right li,#right li a{float:left;display:inline;height:36px;width:180px !important}
+#right .services{    background-position:0px -0px;    cursor:default;    width:180px;    height:40px;    position:absolute;border:none;    background:url(../i/services-sprite.png) transparent no-repeat}
+
+#right .services .hover{    background:url(../i/services-sprite.png) transparent no-repeat;    background-position:0px -40px;    cursor:default;  filter:alpha(opacity = 0);    width:100%;    z-index:50;    height:100%;position:absolute}
+#right .map{background-position:0px -0px;cursor:default;width:180px;margin-left:0px;height:40px;position:absolute;border:none;background:url(../i/map-sprite.png) transparent no-repeat}
+#right .map .hover{cursor:default;margin-left:0px;width:180px;height:40px;position:absolute;border:none;z-index:50;background:url(../i/map-sprite.png) transparent no-repeat bottom left}
+#map{margin-left:30px}
+
+#map_canvas{height:340px;left:50%;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;margin-left:-335px;opacity:0;overflow:hidden;position:absolute;top:120px;width:680px;z-index:0;}
+
+:focus{outline:0}
+
+table{border-collapse:collapse;border-spacing:0}
+
+#cp{left:0;padding-bottom:0px;position:absolute;text-align:center;top:500px;width:100%}
+#header-text-left a{top:15px;background:transparent url(../i/header-text-left.png) left top no-repeat;width:235px;height:32px;position:absolute;left:10px;border:none !important}
+
+#header-text-left a .hover{background:transparent url(../i/header-text-left-hover.png) left top no-repeat;width:235px;height:100%;position:absolute;z-index:950;filter:alpha(opacity = 0)}
+#cp p{color:#fff;font:11px/5px 'junctionregularRegular',Myriad Pro,Verdana,Arial,sans-serif}
+
+a{color:#c1ffae;text-decoration:none;font-size:small;font-weight:normal;border-bottom:white dotted 1px}
+a:hover{border-bottom:white dashed 1px}
+
+#page{padding:0px;margin:0px;height:100%;position:absolute;top:0px;left:50%;margin-left:-340px;width:680px;width:100%}
+#bottom{height:433px;position:absolute;top:100px;left:50%;text-align:center;margin-left:-320px;width:680px;CCborderRadius:5px}
+#slider img{border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
+.nivo-controlNav{position:absolute;left:47%;bottom:-30px}
+#slider .nivo-controlNav{position:absolute;bottom:-70px;/* Put the nav below the slider */}
+#slider .nivo-controlNav img{display:inline;/* Unhide the thumbnails */position:relative;margin-right:10px}
+
+.nivo-controlNav a.active{background-position:-10px 0}
+.nivo-directionNav{overflow:visible;display:block !important;width:100%;height:34px}
+.nivo-directionNav a{display:block;width:32px;height:34px;background:url(../i/arrows.gif) no-repeat;text-indent:-9999px;border:0}
+a.nivo-nextNav{background-position:-32px 0;right:10px}
+a.nivo-prevNav{left:10px}
+#slider{left:50%;background:#004701 url(../i/loading.gif) no-repeat 50% 50%;margin-left:-350px;position:absolute;top:65px;width:680px;overflow:hidden;-moz-box-shadow:#000 0 0 30px;-webkit-box-shadow: black 0 4px 20px;;-webkit-border-radius:5px;height:304px !important;border-radius:5px;-moz-border-radius:5px}
+
+#scov{background:url(../i/overlay.png) repeat-x;left:50%;margin-left:-350px;position:absolute;z-index:1201;top:65px;width:680px;height:304px !important;border-radius:11px;behavior:url(border-radius.htc);-webkit-border-radius:5px;-moz-border-radius:5px}
+.nivoSlider{position:relative;-webkit-border-radius:5px;border-radius:5px;-moz-border-radius:5px}
+.nivoSlider img{position:absolute;top:0px;left:0px}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink{position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:60;display:none}
+/* The slices in the Slider */
+.nivo-slice{display:block;position:absolute;z-index:50;height:100%}
+/* Caption styles */
+.nivo-caption{position:absolute;left:0px;bottom:0px;background:#000;color:#fff;opacity:0.8;/* Overridden by captionOpacity setting */width:100%;z-index:89}
+.nivo-caption p{padding:5px;margin:0}
+/* Direction nav styles (e.g. Next &Prev) */
+.nivo-directionNav a{position:absolute;top:45%;z-index:99;cursor:pointer}
+.nivo-prevNav{left:0px}
+.nivo-nextNav{right:0px}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a{position:relative;z-index:99;cursor:pointer}
+.nivo-controlNav a.active{font-weight:bold}
+.scrollContainer div.panel{display:inline;float:left;height:300px;margin-top:0;width:680px;position:relative;padding:0;z-index:850;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:11px}
+.round{-webkit-border-radius:5px;-moz-border-radius:5px}
+#services{height:36px;width:184px}
+#content-wrapper{bottom:0;height:100%;left:0;opacity:0;position:absolute;right:0;top:0;width:100%}
+#table-curtains{z-index:9999;position:fixed;display:none;width:736px;left:50%;top:0px;margin-left:-340px;margin-right:0px;opacity:0;height:36px;background-repeat:repeat-x;background-image:url(../i/FadeTop.png)}
+#table-curtain-bottom{z-index:9999;bottom:0px;height:36px;display:none;margin-left:-340px;margin-right:0px;position:fixed;width:736px;left:50%;opacity:0;background-repeat:repeat-x;background-image:url(../i/FadeBottom.png)}
