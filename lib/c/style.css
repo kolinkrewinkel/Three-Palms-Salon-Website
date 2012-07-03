@@ -243,7 +243,7 @@ ol,ul {
 #digital-table {
 	position: absolute;
 	width: 750px;
-	height: 1680px;
+	height: 1850px;
 	background: white url('../i/pricesheet.png');
 }
 
@@ -323,6 +323,14 @@ a:hover {
     text-align:center;
     margin-left:-320px;
     width:680px;
+}
+
+#virtual-tours {
+	display: none;
+	left: 50%;
+	width:680px;
+	margin-left: -350px;
+	position: absolute;
 }
 
 #slider {
