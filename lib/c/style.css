@@ -241,19 +241,11 @@ ol,ul {
     z-index:0;
 }
 
-#services-list {
+#digital-table {
+	position: absolute;
 	width: 750px;
-	border-left: none;
-	border-right: none;
-}
-
-:focus {
-    outline:0
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0
+	height: 1680px;
+	background: white url('../i/pricesheet.png');
 }
 
 #cp {
@@ -310,7 +302,6 @@ a:hover {
     left:50%;
     margin-left:-340px;
     width:680px;
-    width:100%
 }
 
 #bottom {
