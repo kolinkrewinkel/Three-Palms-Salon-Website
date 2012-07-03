@@ -75,50 +75,29 @@
     </script><!-- Google Analytics -->
 
     <script type="text/javascript">
-//<![CDATA[
-                  var _gaq = _gaq || [];
-                  _gaq.push(['_setAccount', 'UA-33082600-1']);
-                  _gaq.push(['_trackPageview']);
-                
-                  (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                  })();
-    //]]>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33082600-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
-    <style type="text/css">
-/*<![CDATA[*/
-    p.c23 {font-size: small;}
-    a.c22 {font-size: small;}
-    td.c21 {border-right: 3px solid black;}
-    td.c20 {border-bottom: none;}
-    td.c19 {border: none; border-right: 3px solid black;}
-    td.c18 {border: none;}
-    td.c17 {text-align: center;}
-    td.c16 {text-align: center; padding-left: 0px; border-right: 3px solid black;border-left: none !important}
-    td.c15 {text-align: center; padding-left: 0px; border-right: 3px solid black; border-left: none !important}
-    td.c14 {text-align: center; border-right: 3px solid black;}
-    td.c13 {text-align: center; padding-left: 0px; border-left: none;border-right: 3px solid black;}
-    td.c12 {border-right: none;}
-    td.c11 {border-right: none !important;}
-    p.c10 {font-weight: 300;}
-    td.c9 {text-align: center;border-right: 3px solid black;}
-    p.c8 {margin-top: 3px;}
-    p.c7 {margin-bottom: 0px;}
-    p.c6 {text-align: center}
-    td.c5 {text-align: center; padding-left: 0px; border-right: none;}
-    td.c4 {text-align: center; padding-left: 0px; border-right: 3px solid black;}
-    p.c3 {font-size: x-large; text-align: center}
-    thead.c2 {border-bottom: solid 3px black; border-right: none; border-top: none; border-left: none;}
-    td.c1 {border:none; background: white;}
-    /*]]>*/
-    </style>
+
 </head>
 
 <body onload="initialize()">
     <div id="header-wrapper">
-        <div id="header"></div>
+        <div id="header">
+	        <ul id="navigation-header">
+	            <li id="header-text-left"
+	                class="header-fade"><a href="http://www.threepalmssalon.com/"></a></li>
+	        </ul>
+	        
+	        
+        </div>
     </div>
 
     <div class="table-fade table-sensor"
@@ -133,10 +112,6 @@
     <div id="map_canvas"></div>
 
     <div id="page">
-        <ul>
-            <li id="header-text-left"
-                class="header-fade"><a href="http://www.threepalmssalon.com/"></a></li>
-        </ul>
 
         <div id="buttonbar"></div>
 
@@ -229,8 +204,7 @@
     </div>
 
     <div id="cp">
-        <p class="c23">Copyright &copy; 2012 Three Palms Salon. Design by <a class="c22"
-           href="http://www.kolinkrewinkel.com/">Kolin Krewinkel</a>. All rights
+        <p class="c23">Copyright &copy; 2012 Three Palms Salon. Design by <a href="http://www.kolinkrewinkel.com/">Kolin Krewinkel</a>. All rights
            reserved.</p>
     </div>
 </body>
