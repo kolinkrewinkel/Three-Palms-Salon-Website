@@ -10,7 +10,6 @@
 #main-title {
     color:#c6c6c6;
     text-shadow:0px 0px 3px #2e2e2e;
-    -webkit-text-shadow:
 }
 
 .slide  {
@@ -246,6 +245,18 @@ ol,ul {
 	width: 750px;
 	height: 1680px;
 	background: white url('../i/pricesheet.png');
+}
+
+#vrtoggle {
+    position:absolute;
+    right: 10px;
+    color:white;
+    top: 35px;
+    height: 30px;
+	font-family:'JunctionRegular', 'Helvetica Neue', Verdana, Arial, sans-serif;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+	z-index: 6000;
+	cursor: pointer;
 }
 
 #cp {
