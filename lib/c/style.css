@@ -44,7 +44,8 @@ width:100%
 
 #cp p {
 color:#fff;
-font:11px/5px 'junctionregularRegular',Myriad Pro,Verdana,Arial,sans-serif
+font:11px/5px 'junctionregularRegular',Myriad Pro,Verdana,Arial,sans-serif;
+line-height: 18px
 }
 
 #digital-table {
