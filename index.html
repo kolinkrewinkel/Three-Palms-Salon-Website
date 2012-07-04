@@ -44,34 +44,31 @@
           src="http://maps.google.com/maps/api/js?sensor=false">
 </script>
     <script type="text/javascript">
-//<![CDATA[
-                        var map;
-                        function initialize() {
-                                var myLatLng = new google.maps.LatLng(37.679569, -121.767407);
-                                var myOptions = {
-                                        zoom: 15,
-                                        center: myLatLng,
-                                        mapTypeId: google.maps.MapTypeId.ROADMAP,
-                                        streetViewControl: true
-                                };
-                                
-                                
-                                map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-                                var myLatlng = new google.maps.LatLng(37.679569, -121.767407);
-                                
-                                var contentString = '<p id="firstHeading" style="font-size: small;">Three Palms Salon is located on 2210 Fourth Street, Livermore, CA 94550<\/p>';
-                                var infowindow = new google.maps.InfoWindow({
-                                        content: contentString
-                                });
-                                
-                                var marker = new google.maps.Marker({
-                                        position: myLatlng,
-                                        map: map,
-                                        title:"Three Palms Salon"
-                                });
-                                infowindow.open(map,marker);
-                        };
-    //]]>
+	    var map;
+	    function initialize() {
+	            var myLatLng = new google.maps.LatLng(37.679569, -121.767407);
+	            var myOptions = {
+	                    zoom: 15,
+	                    center: myLatLng,
+	                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+	                    streetViewControl: true
+	            };
+	            
+	            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	            var myLatlng = new google.maps.LatLng(37.679569, -121.767407);
+	            
+	            var contentString = '<p id="firstHeading" style="font-size: small;">Three Palms Salon is located on 2210 Fourth Street, Livermore, CA 94550<\/p>';
+	            var infowindow = new google.maps.InfoWindow({
+	                    content: contentString
+	            });
+	            
+	            var marker = new google.maps.Marker({
+	                    position: myLatlng,
+	                    map: map,
+	                    title:"Three Palms Salon"
+	            });
+	            infowindow.open(map,marker);
+	    };
     </script><!-- Google Analytics -->
 
     <script type="text/javascript">
