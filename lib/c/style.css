@@ -211,7 +211,7 @@ width:184px
 #slider {
 background:#004701;
 border-radius:5px;
-box-shadow:#000 0 5px 7px;
+box-shadow:rgba(0,0,0,0.6) 0 5px 7px;
 height:304px !important;
 left:50%;
 margin-left:-350px;
