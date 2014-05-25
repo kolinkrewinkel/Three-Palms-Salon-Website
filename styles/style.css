@@ -128,19 +128,25 @@ img
 	height: 2em;
 }
 
+#services-table th
+{
+	border-bottom: 2px solid black;
+}
+
 .service-general-header
 {
-	width: 25%;
+	width: 23.333%;
 }
 
 .service-intra-header
 {
-	font-style: italic;
+	font-weight: 600;
+	border-bottom: 1px dashed black;
 }
 
 .price-placeholder
 {
-	width: 8.333%;
+	width: 10%;
 }
 
 .inline-left
