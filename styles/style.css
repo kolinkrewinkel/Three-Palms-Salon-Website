@@ -118,7 +118,9 @@ img
 
 #services-table
 {
-	width: 100%;
+	position: relative;
+	left: -135px;
+	width: 1080px;
 	table-layout: fixed;
 	text-align: right;
 }
