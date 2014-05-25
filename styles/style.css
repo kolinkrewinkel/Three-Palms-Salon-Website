@@ -68,14 +68,16 @@ body
 .panel
 {
 	position: relative;
-	left: 50px;
-	width: 980px;
+	left: 135px;
+	width: 810px;
 
 	line-height: 1.85em;
 	font-size: 1.15em;
 
 	z-index: 50;
 	background: white;
+
+	margin-top: 60px;
 }
 
 .focal-photo
@@ -85,11 +87,6 @@ body
 	margin: 0 auto 0 auto;
 		width: 100%;
 
-}
-
-#description
-{
-	top: 60px;
 }
 
 #exterior-main-photo
@@ -117,6 +114,33 @@ body
 img
 {
 	/*box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);*/
+}
+
+#services-table
+{
+	width: 100%;
+	table-layout: fixed;
+	text-align: right;
+}
+
+#services-table th, #services-table tr
+{
+	height: 2em;
+}
+
+.service-general-header
+{
+	width: 25%;
+}
+
+.service-intra-header
+{
+	font-style: italic;
+}
+
+.price-placeholder
+{
+	width: 8.333%;
 }
 
 .inline-left
