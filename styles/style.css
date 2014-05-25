@@ -43,6 +43,12 @@ body
 	margin: 0;
 }
 
+.header-item a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
 #phone-number
 {
 	top: 13px;
