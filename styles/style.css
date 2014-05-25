@@ -100,6 +100,7 @@ body
 	-webkit-animation-name: hero-expand;
 	-webkit-animation-delay: 0s;
 	-webkit-animation-duration: 0.3s;
+	-webkit-animation-delay: 0.5s;
 }
 
 @-webkit-keyframes hero-shrink
