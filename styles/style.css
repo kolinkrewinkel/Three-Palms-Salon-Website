@@ -193,6 +193,15 @@ table th
 	width: 15%;
 }
 
+.section-header
+{
+	text-align: center;
+	font-size: 2em;
+	border-bottom: 3px double black;
+	border-top: 3px double black;
+	line-height: 2em;
+}
+
 .inline-left
 {
 	float: left;

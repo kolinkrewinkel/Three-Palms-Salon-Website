@@ -2,8 +2,34 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
 	<link href='styles/style.css' rel='stylesheet' type='text/css'>
 	<title>Three Palms Salon &#151; Livermore, California &#151; +1 (925) 447-0450</title>
+
+	<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+
+	<script type="text/javascript">
+	 
+	 function GetMap()
+	 {
+	    // Initialize the map
+		var map = new Microsoft.Maps.Map(document.getElementById("map"),
+			{
+				credentials:"At-pH57tsBnirSMrVKlkAn6A4AHvuzy5KD55uHxCqOppqAn9YApoCuBbVkVQ66eb",
+				center: new Microsoft.Maps.Location(37.679783, -121.767578),
+				mapTypeId: Microsoft.Maps.MapTypeId.road,
+				zoom: 16,
+				showScalebar: false
+			}); 
+
+	    // Retrieve the location of the map center 
+	    var center = map.getCenter();
+	    
+	    // Add a pin to the center of the map
+	    var pin = new Microsoft.Maps.Pushpin(center, {text: '1'}); 
+	    map.entities.push(pin);
+	 }
+
+	</script>
 </head>
-<body>
+<body onload="GetMap()">
 	<div class="content">
 		<header id="navigation">
 			<div class="content">
@@ -23,6 +49,8 @@
 			<img src="photos/interior-facials.png" class="focal-photo"></img>
 		</section>
 		<section id="services" class="panel">
+			<h2 class="section-header">Services</h2>
+
 			<table id="services-table">
 				<tr>
 					<th scope="col" class="service-general-header">Hair</th>
@@ -245,6 +273,7 @@
 			</table>
 		</section>
 		<section id="stylists" class="panel">
+			<h2 class="section-header">Stylists</h2>
 			<table id="stylists-table">
 				<tr>
 					<th scope="col" class="stylist-name-header">Name</th>
@@ -325,12 +354,11 @@
 				</tr>
 			</table>
 		</section>
+		<!-- <iframe width="800" height="400" frameborder="0" src="http://www.bing.com/maps/embed/viewer.aspx?v=3&amp;cp=37.679783~-121.767578&amp;lvl=16&amp;w=800&amp;h=400&amp;sty=r&amp;typ=d&amp;pp=&amp;ps=&amp;dir=0&amp;mkt=en-us&amp;src=SHELL&amp;form=BMEMJS&amp;pushpins=37.679783~-121.767578"></iframe> -->
+
 		<section id="directions" class="panel">
-			<div>
-				<iframe width="800" height="400" frameborder="0" src="http://www.bing.com/maps/embed/viewer.aspx?v=3&cp=37.679783~-121.767578&lvl=16&w=800&h=400&sty=r&typ=d&pp=&ps=&dir=0&mkt=en-us&src=SHELL&form=BMEMJS"></iframe>
-				<div style="margin: 12px 0 0 0;">
-					<a target="_blank" href="http://www.bing.com/maps/?cp=37.679783~-121.767578&sty=r&lvl=16&sp=&mm_embed=map">View Larger Map</a>&nbsp; |&nbsp; <a target="_blank" href="http://www.bing.com/maps/?cp=37.679783~-121.767578&sty=r&lvl=16&rtp=~pos.37.679783_-121.767578____&mm_embed=dir">Get Directions</a>&nbsp; |&nbsp; <a target="_blank" href="http://www.bing.com/maps/?cp=q8cz0p4vkdyg&sty=b&lvl=18&sp=&mm_embed=be">View Bird's Eye</a></div>
-			</div>
+			<h2 class="section-header">Location & Directions</h2>
+			<div id="map" style="position:relative; width:810px; height:400px;"></div>
 		</section>
 		<section id="reviews" class="panel"></section>
 	</div>
