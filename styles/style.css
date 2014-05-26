@@ -21,6 +21,24 @@ body
 	height: 100%
 }
 
+footer
+{
+	height: 120px;
+	width: 100%;
+
+	text-align: center;
+	/*font-style: italic;*/
+	/*font-weight: 300;*/
+	color: rgb(125, 125, 125);
+	font-size: 0.9em;
+}
+
+#sosumi
+{
+	position: relative;
+	top: 42px;
+}
+
 #navigation
 {
 	position: fixed;
