@@ -1,36 +1,31 @@
+<!DOCTYPE html>
 <head>
-  <title>Three Palms Salon &#151; Livermore, California &#151; (925) 413-6181</title>
-  <meta name="google-site-verification" content="zMMWS-2o9Mi8OJuCpcmVLW6_GYSp6aoayTxDjDtPRAg" />
+  <meta charset="UTF-8">
+  <title>Three Palms Salon &#151; Livermore, California &#151; (925) 413-6181</title>  
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link href='styles/style.css' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+  <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
   <script type="text/javascript">
-   function GetMap()
-   {
-    Microsoft.Maps.loadModule('Microsoft.Maps.Themes.BingTheme', {callback: function()
-    {       
-        // Initialize the map
-      var map = new Microsoft.Maps.Map(document.getElementById("map"),
-        {
+    function GetMap()
+    {
+      var salonLocation = new Microsoft.Maps.Location(37.679783, -121.767578);
+      var map = new Microsoft.Maps.Map('#map', {
           credentials:"At-pH57tsBnirSMrVKlkAn6A4AHvuzy5KD55uHxCqOppqAn9YApoCuBbVkVQ66eb",
-          center: new Microsoft.Maps.Location(37.679783, -121.767578),
-          mapTypeId: Microsoft.Maps.MapTypeId.road,
-          zoom: 16,
+          center: salonLocation,
+          zoom: 15,
           showScalebar: false,
-          theme: new Microsoft.Maps.Themes.BingTheme(),
-          disableKeyboardInput: true
+          showMapTypeSelector: false,
         }); 
 
-        // Retrieve the location of the map center 
-        var center = map.getCenter();
-        
-        // Add a pin to the center of the map
-        var pin = new Microsoft.Maps.Pushpin(center, {text: ''}); 
-        map.entities.push(pin);
+      // Mark the location
+      var pin = new Microsoft.Maps.Pushpin(salonLocation, {
+        text: '',
+        title: '2210 Fourth Street',
+        subTitle: 'Livermore, CA',
+      });
+      map.entities.push(pin);
     }
-    });
-   }
   </script>
   <script>
     !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
@@ -40,8 +35,10 @@
 
     _gs('GSN-813892-N');
   </script>
+
+  <meta name="google-site-verification" content="zMMWS-2o9Mi8OJuCpcmVLW6_GYSp6aoayTxDjDtPRAg" />
 </head>
-<body onload="GetMap()">
+<body>
   <div id="container" class="content">
     <header id="navigation">
       <div class="content">
