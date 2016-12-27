@@ -17,7 +17,7 @@ body
   position: relative;
   top: 0;
   margin: 0 auto 0 auto;
-  width: 896px;
+  max-width: 896px;
   height: 100%
 }
 
@@ -44,7 +44,6 @@ footer
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
 
   border-bottom: 1px solid #ffffff;
   background: rgb(0, 0, 0);
@@ -53,11 +52,25 @@ footer
   z-index: 100;
 }
 
+#navigation-content
+{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: nowrap;
+  flex-flow: nowrap;
+}
+
 .header-item
 {
-  position: absolute;
   height: 100%;
   margin: 0;
+  line-height: 60px;
+  text-align: center;
+  display: block;  
 }
 
 #navigation h3
@@ -72,33 +85,27 @@ footer
   border-bottom: 1px dashed rgb(255, 255, 255);
 }
 
-.phone-number
+#phone-number
 {
-  top: 15px;
-
   font-weight: normal;
+  flex-grow: 1;
 }
 
 #title
 {
-  top: 8px;
-  left: 50%;
-  margin-left: -165px;
+  flex-grow: 2;
 }
 
-.address
+#address
 {
-  position: absolute;
-  top: 16px;
-  right: 0;
-
   font-weight: normal;
+  flex-grow: 1;
 }
 
 .panel
 {
   position: relative;
-  width: 896px;
+  width: 100%;
 
   line-height: 1.85em;
   font-size: 1.15em;
@@ -182,22 +189,22 @@ table th
 
 .stylist-name-header
 {
-  width: 30%;
+  width: 25%;
 }
 
 .stylist-name-header-2
 {
-  width: 35%;
+  width: 25%;
 }
 
 .stylist-number-header
 {
-  width: 20%;
+  width: 25%;
 }
 
 .stylist-number-header-2
 {
-  width: 15%;
+  width: 25%;
 }
 
 .section-header
@@ -216,74 +223,46 @@ table th
   margin: 10px 10px 0px 0;
 }
 
-.screen
-{
-  display: inherit;
-}
-
 #map
 {
   position:relative;
-  width: 896px;
+  width: 100%;
   height: 400px;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 640px)
-{
-  body
-  {
-    font-size: 24pt;
-  }
+.compact {
+  display: none;
+}
 
-  #navigation
-  {
-    height: 120px;
-  }
-
-  #title
-  {
-    top: 25px;
-    margin-left: -250px;
-
-    font-size: 1.75em;
-  }
-
-  .address
-  {
-    right: 25px;
-    top: 36px;
-
-    font-size: 1.35em;
-  }
-
-  .phone-number
-  {
-    left: 25px;
-    top: 36px;
-
-    font-size: 1.35em;
-  }
-
-  .ios
-  {
+@media all and (max-width : 896px) {
+  .compact {
     display: block;
   }
 
-  .panel
-  {
-    left: 25px;
-    width: 1030px;
-  }
-
-  #map
-  {
-    width: 1030px;
-  }
-
-  .screen
-  {
+  .expanded {
     display: none;
+  }
+
+  #container, #navigation-content
+  {
+    padding: 0 12px 0 12px;
+  }
+
+  table {
+    font-size: 0.75em;
+  }
+}
+
+@media all and (max-width : 500px) {
+  #exterior-main-photo {
+    height: 220px;
+  }
+
+  #title {
+    display: none;
+  }
+
+  table {
+    font-size: 0.5em;
   }
 }
