@@ -9,6 +9,8 @@
   --body-text-color: #000000;
 
   --footer-text-color: rgb(125, 125, 125);
+
+  --link-color: rgb(0, 128, 255);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +25,13 @@
     --body-text-color: #ffffff;
 
     --footer-text-color: rgb(200, 200, 200);
+
+    --link-color: rgb(0, 155, 255);
   }
+}
+
+a {
+  color: var(--link-color);
 }
 
 body {
