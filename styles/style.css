@@ -176,6 +176,11 @@ table th
   border-bottom: 1px dashed black;
 }
 
+.service-annotates-above {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
 .price-placeholder
 {
   width: 7%;
