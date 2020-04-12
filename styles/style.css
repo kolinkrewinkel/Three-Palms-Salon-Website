@@ -3,11 +3,27 @@
 
   --header-background-color: #000000;
   --header-text-color: #ffffff;
+  --header-border-color: #ffffff;
 
   --body-divider-color: #000000;
   --body-text-color: #000000;
 
   --footer-text-color: rgb(125, 125, 125);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000000;
+
+    --header-background-color: rgb(32, 32, 32);
+    --header-text-color: #ffffff;
+    --header-border-color: rgb(165, 165, 165);
+
+    --body-divider-color: #ffffff;
+    --body-text-color: #ffffff;
+
+    --footer-text-color: rgb(200, 200, 200);
+  }
 }
 
 body {
@@ -21,6 +37,7 @@ body {
   background: var(--background-color);
   font-family: "Raleway", sans-serif;
   font-size: 14pt;
+  color: var(--body-text-color);
 }
 
 .content {
@@ -51,7 +68,7 @@ footer {
   left: 0;
   width: 100%;
 
-  border-bottom: 1px solid var(--header-text-color);
+  border-bottom: 1px solid var(--header-border-color);
   background: var(--header-background-color);
   color: var(--header-text-color);
 
