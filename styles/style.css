@@ -1,5 +1,4 @@
-body
-{
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -8,37 +7,33 @@ body
   overflow-y: auto;
 
   background: rgba(255, 255, 255, 1);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14pt;
 }
 
-.content
-{
+.content {
   position: relative;
   top: 0;
   margin: 0 auto 0 auto;
   max-width: 896px;
-  height: 100%
+  height: 100%;
 }
 
-footer
-{
+footer {
   height: 6em;
-  width: 100%;  
+  width: 100%;
   text-align: center;
   color: rgb(125, 125, 125);
   font-size: 0.9em;
 }
 
-.disclosure
-{
+.disclosure {
   top: 2em;
   position: relative;
-  margin: 0;  
+  margin: 0;
 }
 
-#navigation
-{
+#navigation {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,58 +46,51 @@ footer
   z-index: 100;
 }
 
-#navigation-content
-{
+#navigation-content {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;  
-  
+  display: flex;
+
   -webkit-flex-flow: nowrap;
   flex-flow: nowrap;
 }
 
-.header-item
-{
+.header-item {
   height: 100%;
   margin: 0;
   line-height: 60px;
   text-align: center;
-  display: block;  
+  display: block;
 }
 
-#navigation h3
-{
+#navigation h3 {
   margin: 0;
 }
 
-.header-item a, #navigation h3 a
-{
+.header-item a,
+#navigation h3 a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px dashed rgb(255, 255, 255);
 }
 
-#phone-number
-{
+#phone-number {
   font-weight: normal;
   flex-grow: 1;
 }
 
-#title
-{
+#title {
   flex-grow: 2;
 }
 
-#address
-{
+#address {
   font-weight: normal;
   flex-grow: 1;
 }
 
-.panel
-{
+.panel {
   position: relative;
   width: 100%;
 
@@ -115,37 +103,30 @@ footer
   margin-top: 60px;
 }
 
-.ios
-{
+.ios {
   display: none;
 }
 
-.focal-photo
-{
+.focal-photo {
   display: block;
   position: relative;
   margin: 0 auto 0 auto;
   width: 100%;
-
 }
 
-#exterior-main-photo
-{
+#exterior-main-photo {
   height: 380px;
   max-height: 400px;
 
-  background: url('../photos/exterior-south-east.jpg') center center;
+  background: url("../photos/exterior-south-east.jpg") center center;
   background-size: cover;
 }
 
-
-a[href^=tel]
-{
+a[href^="tel"] {
   color: inherit;
 }
 
-#services-table
-{
+#services-table {
   position: relative;
 
   width: 100%;
@@ -153,25 +134,22 @@ a[href^=tel]
   text-align: right;
 }
 
-table th, table tr
-{
+table th,
+table tr {
   height: 2em;
 }
 
-table th
-{
+table th {
   border-bottom: 2px solid black;
 }
 
-.service-general-header
-{
+.service-general-header {
   width: 26.333%;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
-.service-intra-header
-{
+.service-intra-header {
   font-weight: 700;
   border-bottom: 1px dashed black;
 }
@@ -181,40 +159,33 @@ table th
   font-size: 0.75em;
 }
 
-.price-placeholder
-{
+.price-placeholder {
   width: 7%;
 }
 
-#stylists-table
-{
+#stylists-table {
   width: 100%;
 
   text-align: right;
 }
 
-.stylist-name-header
-{
+.stylist-name-header {
   width: 25%;
 }
 
-.stylist-name-header-2
-{
+.stylist-name-header-2 {
   width: 25%;
 }
 
-.stylist-number-header
-{
+.stylist-number-header {
   width: 25%;
 }
 
-.stylist-number-header-2
-{
+.stylist-number-header-2 {
   width: 25%;
 }
 
-.section-header
-{
+.section-header {
   text-align: center;
   font-size: 2em;
   border-bottom: 3px double black;
@@ -222,16 +193,14 @@ table th
   line-height: 2em;
 }
 
-.inline-left
-{
+.inline-left {
   float: left;
   width: 60%;
   margin: 10px 10px 0px 0;
 }
 
-#map
-{
-  position:relative;
+#map {
+  position: relative;
   width: 100%;
   height: 400px;
 }
@@ -240,7 +209,7 @@ table th
   display: none;
 }
 
-@media all and (max-width : 896px) {
+@media all and (max-width: 896px) {
   .compact {
     display: block;
   }
@@ -249,8 +218,8 @@ table th
     display: none;
   }
 
-  #container, #navigation-content
-  {
+  #container,
+  #navigation-content {
     padding: 0 12px 0 12px;
   }
 
@@ -259,7 +228,7 @@ table th
   }
 }
 
-@media all and (max-width : 500px) {
+@media all and (max-width: 500px) {
   #exterior-main-photo {
     height: 220px;
   }
