@@ -191,6 +191,10 @@ table th {
   font-size: 0.75em;
 }
 
+.service-price-small {
+  font-size: 0.75em;
+}
+
 .price-placeholder {
   width: 7%;
 }
