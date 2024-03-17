@@ -58,15 +58,21 @@ body {
 
 footer {
   height: 6em;
-  width: 100%;
+  width: 80%;
+  padding: 0 10% 0 10%;
   text-align: center;
   color: var(--footer-text-color);
   font-size: 0.9em;
 }
 
 .disclosure {
-  top: 2em;
+  margin: 2em 0 0 0;
+  line-height: 1.85em;
+}
+
+.disclosure-minor {
   position: relative;
+  font-size: 0.8em;
   margin: 0;
 }
 
