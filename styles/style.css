@@ -81,6 +81,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 8px 0px 8px 0px;
 
   border-bottom: 1px solid var(--header-border-color);
   background: var(--header-background-color);
@@ -99,12 +100,11 @@ footer {
 
   -webkit-flex-flow: nowrap;
   flex-flow: nowrap;
+  align-items: center;
 }
 
-.header-item {
-  height: 100%;
+.header-item {  
   margin: 0;
-  line-height: 60px;
   text-align: left;
   display: block;
 }
@@ -229,14 +229,31 @@ table th {
   height: 400px;
 }
 
-@media all and (max-width: 896px) {
+#standalone-title {
+  display: none;
+}
+
+@media all and (max-width: 980px) {
   #container,
-  #navigation-content {
-    padding: 0 12px 0 12px;
+  #navigation {
+    padding: 16px 20px 16px 20px;
   }
 
-  table {
-    font-size: 0.75em;
+  .header-item {
+    text-align: left;
+  }
+
+   #title {
+    display:none;
+
+  }
+
+  #standalone-title {
+    display: block;
+  }
+
+  .panel {
+      margin-top: 100px;
   }
 }
 
