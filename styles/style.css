@@ -217,9 +217,8 @@ table th {
 .section-header {
   text-align: left;
   font-size: 2em;
-  border-bottom: 3px double var(--body-divider-color);
-  border-top: 3px double var(--body-divider-color);
-  line-height: 2em;
+  border-bottom: 4px solid var(--body-divider-color);
+  line-height: 1.8em;
 }
 
 #map {
