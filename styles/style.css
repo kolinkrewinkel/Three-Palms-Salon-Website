@@ -58,9 +58,9 @@ body {
 
 footer {
   height: 6em;
-  width: 80%;
-  padding: 0 10% 0 10%;
-  text-align: center;
+  width: 100%;
+  padding: 0;
+  text-align: left;
   color: var(--footer-text-color);
   font-size: 0.9em;
 }
@@ -164,7 +164,7 @@ a[href^="tel"] {
 
   width: 100%;
   table-layout: fixed;
-  text-align: right;
+  text-align: left;
 }
 
 table th,
@@ -179,7 +179,6 @@ table th {
 
 .service-general-header {
   width: 26.333%;
-  padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
@@ -204,7 +203,7 @@ table th {
 #stylists-table {
   width: 100%;
 
-  text-align: right;
+  text-align: left;
 }
 
 .stylist-name-header {
@@ -216,7 +215,7 @@ table th {
 }
 
 .section-header {
-  text-align: center;
+  text-align: left;
   font-size: 2em;
   border-bottom: 3px double var(--body-divider-color);
   border-top: 3px double var(--body-divider-color);
