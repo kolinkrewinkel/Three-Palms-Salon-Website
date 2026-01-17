@@ -49,11 +49,8 @@ body {
 }
 
 .content {
-  position: relative;
-  top: 0;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   max-width: 980px;
-  height: 100%;
 }
 
 footer {
@@ -66,12 +63,11 @@ footer {
 }
 
 .disclosure {
-  margin: 2em 0 0 0;
+  margin-top: 2em;
   line-height: 1.85em;
 }
 
 .disclosure-minor {
-  position: relative;
   font-size: 0.8em;
   margin: 0;
 }
@@ -81,29 +77,21 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 8px 0px 8px 0px;
-
+  padding: 8px 0;
   border-bottom: 1px solid var(--header-border-color);
   background: var(--header-background-color);
   color: var(--header-text-color);
-
   z-index: 100;
 }
 
 #navigation-content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   column-gap: 20px;
-
-  -webkit-flex-flow: nowrap;
   flex-flow: nowrap;
   align-items: center;
 }
 
-.header-item {  
+.header-item {
   margin: 0;
   text-align: left;
   display: block;
@@ -113,15 +101,13 @@ footer {
   margin: 0;
 }
 
-.header-item a,
-#navigation h3 a {
+.header-item a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid var(--header-text-color);
 }
 
-.header-item a,
-#navigation h3 a:hover {
+.header-item a:hover {
   color: skyblue;
 }
 
@@ -130,20 +116,15 @@ footer {
 }
 
 .panel {
-  position: relative;
   width: 100%;
-
   line-height: 1.85em;
   font-size: 1.15em;
-
-  z-index: 50;
   margin-top: 60px;
 }
 
 .focal-photo {
   display: block;
-  position: relative;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -160,8 +141,6 @@ a[href^="tel"] {
 }
 
 #services-table {
-  position: relative;
-
   width: 100%;
   table-layout: fixed;
   text-align: left;
@@ -202,7 +181,6 @@ table th {
 
 #stylists-table {
   width: 100%;
-
   text-align: left;
 }
 
@@ -222,7 +200,6 @@ table th {
 }
 
 #map {
-  position: relative;
   width: 100%;
   height: 400px;
 }
@@ -231,19 +208,18 @@ table th {
   display: none;
 }
 
-@media all and (max-width: 980px) {
+@media (max-width: 980px) {
   #container,
   #navigation {
-    padding: 16px 20px 16px 20px;
+    padding: 16px 20px;
   }
 
   .header-item {
     text-align: left;
   }
 
-   #title {
-    display:none;
-
+  #title {
+    display: none;
   }
 
   #standalone-title {
@@ -251,11 +227,11 @@ table th {
   }
 
   .panel {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 }
 
-@media all and (max-width: 500px) {
+@media (max-width: 500px) {
   #exterior-main-photo {
     height: 220px;
   }
