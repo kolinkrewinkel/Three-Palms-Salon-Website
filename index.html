@@ -10,28 +10,36 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap" async defer></script>
   <script>
-    function GetMap() {
-      var salonLocation = new Microsoft.Maps.Location(37.679783, -121.767578);
-      var map = new Microsoft.Maps.Map("#map", {
-        credentials:
-          "At-pH57tsBnirSMrVKlkAn6A4AHvuzy5KD55uHxCqOppqAn9YApoCuBbVkVQ66eb",
+    async function initMap() {
+      const { Map } = await google.maps.importLibrary("maps");
+      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+      var salonLocation = { lat: 37.679783, lng: -121.767578 };
+      var map = new Map(document.getElementById("map"), {
         center: salonLocation,
-        zoom: 15,
-        showScalebar: false,
-        showMapTypeSelector: false,
+        zoom: 15.5,
+        mapId: "370796a9374bc2ca080a82ec",
+        mapTypeControl: false,
+        scaleControl: false,
+        fullscreenControl: false,
+        streetViewControl: false
       });
 
-      // Mark the location
-      var pin = new Microsoft.Maps.Pushpin(salonLocation, {
-        text: "",
-        title: "2210 Fourth Street",
-        subTitle: "Livermore, CA",
+      var marker = document.createElement("div");
+      marker.className = "map-marker";
+      marker.innerHTML = '<div class="map-pin-head"></div><div class="map-pin-point"></div>';
+
+      new AdvancedMarkerElement({
+        position: salonLocation,
+        map: map,
+        title: "2210 Fourth Street, Livermore, CA",
+        content: marker
       });
-      map.entities.push(pin);
     }
+    window.initMap = initMap;
   </script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiaFryQ07mV_pZjWvb263LOJhZB1Lx9ew&loading=async&callback=initMap"></script>
   <script>
     !(function (g, s, q, r, d) {
       r = g[r] =
