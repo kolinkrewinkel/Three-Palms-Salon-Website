@@ -60,6 +60,17 @@
     name="google-site-verification"
     content="zMMWS-2o9Mi8OJuCpcmVLW6_GYSp6aoayTxDjDtPRAg"
   />
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (/android/i.test(navigator.userAgent)) {
+        var links = document.querySelectorAll(".directions-link");
+        links.forEach(function(link) {
+          link.href = "https://www.google.com/maps/dir/?api=1&destination=2210+Fourth+St,+Livermore,+CA+94550";
+        });
+      }
+    });
+  </script>
 </head>
 <body>
   <div id="container" class="content">
@@ -72,7 +83,7 @@
           <a href="tel:1-925-413-6181">Call</a>
         </h3>
         <h3 class="header-item">
-          <a href="https://maps.apple.com/?daddr=2210%20Fourth%20St,%20Livermore,%20CA%2094550%20">Directions</a>
+          <a class="directions-link" href="https://maps.apple.com/?daddr=2210%20Fourth%20St,%20Livermore,%20CA%2094550%20">Directions</a>
         </h3>
         <h3 class="header-item">
           <a href="./giftcards.html" target="_blank">Gift Cards</a>
@@ -472,6 +483,7 @@
       <p>
         Find us at
           <a
+            class="directions-link"
             href="https://maps.apple.com/?daddr=2210%20Fourth%20St,%20Livermore,%20CA%2094550%20"
             >2210 Fourth Street, Livermore, CA, 94550</a
           >, next to Carnegie Park.
