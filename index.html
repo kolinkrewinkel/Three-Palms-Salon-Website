@@ -63,12 +63,17 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      if (/android/i.test(navigator.userAgent)) {
-        var links = document.querySelectorAll(".directions-link");
-        links.forEach(function(link) {
-          link.href = "https://www.google.com/maps/dir/?api=1&destination=2210+Fourth+St,+Livermore,+CA+94550";
-        });
+      // The links default to Google Maps, which resolves on every platform.
+      // Apple platforms get the native Maps app instead; iPadOS reports "Macintosh".
+      if (!/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)) {
+        return;
       }
+
+      var appleMapsUrl = "https://maps.apple.com/?daddr=2210%20Fourth%20St,%20Livermore,%20CA%2094550%20";
+      var links = document.querySelectorAll(".directions-link");
+      links.forEach(function(link) {
+        link.href = appleMapsUrl;
+      });
     });
   </script>
 </head>
@@ -83,7 +88,7 @@
           <a href="tel:1-925-413-6181">Call</a>
         </h3>
         <h3 class="header-item">
-          <a class="directions-link" href="https://maps.apple.com/?daddr=2210%20Fourth%20St,%20Livermore,%20CA%2094550%20">Directions</a>
+          <a class="directions-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=2210+Fourth+St,+Livermore,+CA+94550">Directions</a>
         </h3>
         <h3 class="header-item">
           <a href="./giftcards.html" target="_blank">Gift Cards</a>
@@ -484,7 +489,7 @@
         Find us at
           <a
             class="directions-link"
-            href="https://maps.apple.com/?daddr=2210%20Fourth%20St,%20Livermore,%20CA%2094550%20"
+            href="https://www.google.com/maps/dir/?api=1&amp;destination=2210+Fourth+St,+Livermore,+CA+94550"
             >2210 Fourth Street, Livermore, CA, 94550</a
           >, next to Carnegie Park.
       </p>
